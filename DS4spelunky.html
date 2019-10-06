@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Spelunky HD PS4 button icons for PC.">
+    <meta name="keywords" content="silencebow, louis pasteur, steam, spelunky, mod, PS4, DualShock 4">
+    <meta name="author" content="silencebow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SilenceBow">
+    <meta property="og:description" content="Spelunky HD PS4 button icons for PC.">
+    <meta property="og:url" content="https://silencebow.github.io/DS4spelunky">
+    <meta property="og:image" content="https://i.imgur.com/ex00Yqf.png">
+    <meta property="og:image:width" content="184">
+    <meta property="og:image:height" content="184">
+    <link rel="stylesheet" type="text/css" href="css/DS4spelunky.css">
+    <link href="docs/favicon.ico" rel="icon" type="image/x-icon">
+    <title>Spelunky</title>
+  </head>
+  <body>
+    <div style="text-align: center;" id="body">
+      <div style="display: inline-block; text-align: left;">
+        <h1 class="bgdiv">Spelunky HD - PS4 Button Icons</h1>
+        <p>
+          This mod changes the button icons of Spelunky HD to DualShock 4 buttons. Useful for those that
+          use a PS4 controller with <a href="https://ryochan7.github.io/ds4windows-site/">DS4Windows</a>.<br>
+          If you know where your Spelunky directory is and have no other mods, installation can be done in less than a minute.
+        </p>
+        <img src="docs/DS4spelunky/DS4screenshot.png" style="width: 864px;" alt="Screenshot">
+        <h2 class="bgdiv">Installation:</h2>
+        <p><b>If this is your only mod:</b><br>
+          <a href="docs/DS4spelunky/alltex.zip" download="alltex.zip" id="dl-direct">Download</a>
+          (66 MB)
+        </p>
+        <p>
+          Extract the contents of alltex.zip into your Spelunky's "Data" directory.<br> This will be
+          'C:\Program Files (x86)\Steam\steamapps\common\Spelunky\Data' on Steam.<br> Replace as necessary.
+        </p>
+        <p>
+        <b>If you have other mods:</b><br>
+        <small>(Tutorial panels not included!)</small>
+        </p>
+        <p>
+          <b>1.</b> Download <a href="docs/DS4spelunky/hudelements.png">this</a> and
+          <a href="docs/DS4spelunky/controller.png">this</a> (in full resolution).<br><br>
+          <b>2.</b> Download Spelunktool
+          (<a href="https://www.tzarsectus.com/tools/spelunktool.rar">https://www.tzarsectus.com/tools/spelunktool.rar</a>)
+          and extract it into your Spelunky's "Data" directory.<br> This will be
+          'C:\Program Files (x86)\Steam\steamapps\common\Spelunky\Data' on Steam.<br><br>
+          <b>3.</b> Open up a command prompt with administrator privileges. To do this, simply tap your start button,<br> type
+          in "cmd", then right-click the entry for CMD that shows up, and choose "Run as administrator".<br><br>
+          <b>4.</b> Get to the directory you extracted Spelunktool to. To do this: cd &lt;game path&gt;, where &lt;game path&gt; is where
+          you extracted Spelunktool.<br> For example: cd C:\Program Files (x86)\Steam\SteamApps\common\Spelunky\Data.<br><br>
+          <b>5.</b> Open up Windows Explorer, and browse into the Textures directory, highlight alltex.wad and alltex.wad.wix,
+          then hit ctrl + c<br> to copy them.<br><br>
+          <b>6.</b> Go back up a level to the Data directory and paste them there.<br><br>
+          <b>7.</b> Go back to your cmd window, and type the following: spelunktool -x alltex.wad<br><br>
+          <b>8.</b> Let the tool finish, and you should see a new "alltex" directory in Windows explorer. This is where the
+          image files go.<br><br>
+          <b>9.</b> Head on into the alltex directory with Windows explorer, then into the ATSTART directory within there.<br>
+          Copy hudelements.png into there overwriting the existing file.<br><br>
+          <b>10.</b> Go back up a level, and then into the HELPNOOPTIONS directory. Copy controller.png into here.<br><br>
+          <b>11.</b> Go back to your cmd window, then type the following command: spelunktool -c alltex<br><br>
+          <b>12.</b> Wait for the tool to say something along the following lines so you know it's done:<br>
+        </p>
+          <blockquote>
+            alltex.wad created with 194 files.<br>
+            33 duplicates.
+          </blockquote>
+        <p>
+          <b>13.</b> Go back into your Textures directory, and make a backup of alltex.wad and alltex.wad.wix just in case you
+          want to go back to the<br> original Spelunky later.<br><br>
+          <b>14.</b> Once you've made your backup, copy the alltex.wad and alltex.wad.wix files from the Data directory into
+          the Textures directory.
+        </p>
+        <h2 class="bgdiv">Sources:</h2>
+        <ul>
+          <li><a href="http://mossmouth.com/forums/index.php?topic=3622.0">Mod Integration Instructions</a></li>
+          <li><a href="https://www.reddit.com/r/spelunky/comments/24r8hv/better_ps3_ui_mod/">Tutorial Panels</a></li>
+          <li><a href="https://www.gtagaming.com/360-to-ps4-controller-icons-f30380.html">Button Icons</a></li>
+          <li><a href="https://pixabay.com/en/kontroller-gaming-ps4-playstation-2022084/">Controller</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
