@@ -4,6 +4,9 @@ html {
   font-family: 'Montserrat', 'Helvetica', 'Arial', 'Sans-Serif';
   font-size: 16;
 }
+a {
+    color: #3391ff;
+}
 h1 {
   font-family: 'Montserrat Subrayada', 'Helvetica', 'Arial', 'Sans-Serif';
 }
