@@ -1,8 +1,8 @@
 // Define the array globally for potential future use
 var list = []
 
-// Apply submitted values to the array
 function input_button() {
+  // Apply submitted values to the array
   list[0] = document.getElementById("total_input").value;
   list[1] = document.getElementById("recorded_input").value;
   list[2] = document.getElementById("scout_input").value;
@@ -49,6 +49,7 @@ function show_output() {
   var y = document.getElementsByClassName("left")[0];
   y.getElementsByClassName("output")[0].style.display = "block";
 }
+// Hide the output field and show the input field
 function show_input() {
   var x = document.getElementsByClassName("left")[0];
   x.getElementsByClassName("output")[0].style.display = "none";

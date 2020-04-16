@@ -2,13 +2,9 @@ html {
   background-color: #181a1b;
   color: rgb(255, 255, 255);
   font-family: 'Montserrat', 'Helvetica', 'Arial', 'Sans-Serif';
-  font-size: 16;
 }
 a {
     color: #3391ff;
-}
-h1 {
-  font-family: 'Montserrat Subrayada', 'Helvetica', 'Arial', 'Sans-Serif';
 }
 h1 {
   font-size: 46px;
@@ -67,7 +63,8 @@ span {
 }
 .button {
   border: 0px;
-  background-color: rgb(105, 27, 153);
+  background-color: rgb(60, 60, 60);
+  /* background-color: rgb(105, 27, 153); */
   width: 75px;
 }
 .right {
