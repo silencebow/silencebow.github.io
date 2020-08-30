@@ -1,84 +1,96 @@
-<html lang="en">
+<!DOCTYPE html>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="description" content="An easy way to calculate your hours played per class after having reset your stats.">
-  <meta name="keywords" content="steam, tf2, hours, stats, reset">
-  <meta name="author" content="silencebow">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="TF2 Hours Calculator">
-  <meta property="og:description" content="An easy way to calculate your hours played per class after having reset your stats.">
-  <meta property="og:url" content="https://silencebow.github.io/hourscalculator">
-  <meta property="og:image" content="https://i.imgur.com/ex00Yqf.png">
-  <meta property="og:image:width" content="184">
-  <meta property="og:image:height" content="184">
-  <link rel="stylesheet" type="text/css" href="css/hourscalculator.css">
-  <script src="js/hourscalculator.js"></script>
-  <link href="docs/favicon.ico" rel="icon" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <title>TF2 Hours Calculator</title>
-</head>
-<body>
-  <div class="left">
-    <h1>TF2 Hour Calculator</h1>
-    <div class="input">
-      <form>
-        Total Playtime:     <input type="number" id="total_input" min="0" max="99999" required><br>
-        Hours on Record: <input type="number" id="recorded_input" min="0" max="99999" required><br>
-        <br>
-        Scout:     <input type="number" id="scout_input" min="0" max="99999" required><br>
-        Soldier:   <input type="number" id="soldier_input" min="0" max="99999" required><br>
-        Pyro:      <input type="number" id="pyro_input" min="0" max="99999" required><br>
-        Demoman:   <input type="number" id="demoman_input" min="0" max="99999" required><br>
-        Heavy:     <input type="number" id="heavy_input" min="0" max="99999" required><br>
-        Engineer:  <input type="number" id="engineer_input" min="0" max="99999" required><br>
-        Medic:     <input type="number" id="medic_input" min="0" max="99999" required><br>
-        Sniper:    <input type="number" id="sniper_input" min="0" max="99999" required><br>
-        Spy:       <input type="number" id="spy_input" min="0" max="99999" required><br>
-        <input type="button" class="button" onclick="input_button()" value="Submit">
-      </form>
-    </div> 
-    <div class="output">
-      <p class="result">Your estimated class hours:</p>
-      <p>Scout     <span class="result" id="scout_result"></span>     <img src="docs/hourcalculator/class_icons/scout.png" class="icons"></p>
-      <p>Soldier   <span class="result" id="soldier_result"></span>   <img src="docs/hourcalculator/class_icons/soldier.png" class="icons"></p>
-      <p>Pyro      <span class="result" id="pyro_result"></span>      <img src="docs/hourcalculator/class_icons/pyro.png" class="icons"></p>
-      <p>Demoman   <span class="result" id="demoman_result"></span>   <img src="docs/hourcalculator/class_icons/demoman.png" class="icons"></p>
-      <p>Heavy     <span class="result" id="heavy_result"></span>     <img src="docs/hourcalculator/class_icons/heavy.png" class="icons"></p>
-      <p>Engineer  <span class="result" id="engineer_result"></span>  <img src="docs/hourcalculator/class_icons/engineer.png" class="icons"></p>
-      <p>Medic     <span class="result" id="medic_result"></span>     <img src="docs/hourcalculator/class_icons/medic.png" class="icons"></p>
-      <p>Sniper    <span class="result" id="sniper_result"></span>    <img src="docs/hourcalculator/class_icons/sniper.png" class="icons"></p>
-      <p>Spy       <span class="result" id="spy_result"></span>       <img src="docs/hourcalculator/class_icons/spy.png" class="icons"></p>
-      <input type="button" class="button" value="Go Back" onClick="show_input()">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="An easy way to calculate your hours played per class after having reset your stats.">
+    <meta name="keywords" content="steam, tf2, hours, stats, reset">
+    <meta name="author" content="silencebow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="TF2 Hours Calculator">
+    <meta property="og:description" content="An easy way to calculate your hours played per class after having reset your stats.">
+    <meta property="og:url" content="https://silencebow.github.io/hourscalculator">
+    <meta property="og:image" content="https://i.imgur.com/ex00Yqf.png">
+    <meta property="og:image:width" content="184">
+    <meta property="og:image:height" content="184">
+    <link href="docs/favicon.ico" rel="icon" type="image/x-icon">
+    
+    <link rel="stylesheet" type="text/css" href="css/hourscalculator.css">
+    <script src="js/hourscalculator.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <title>TF2 Hours Calculator</title>
+  </head>
+  <div class="header">
+    <div class="header-container">
+      <div class="title">
+        <h1>SILENCEBOW</h1>
+      </div>
+      <div class="nav">
+        <a href="/index">Home</a>
+      </div>
     </div>
   </div>
-  <div class="right">
-    <h2>> Usage</h2>
-    <p>
-      To find your class playtime and recorded playtime, go to your TF2 achievements in Steam. Then go to the
-      <i>"Records + Stats"</i> tab. Below are the class playtimes, and the recorded playtime is on the right in a
-      light grey box as <i>"___ on record"</i>. The total playtime is the one shown beside the play button for TF2
-      in your library.
-    </p>
-    <h3>> About</h3>
-    <p>
-      This is a very basic calculator that does some simple math to estimate what your class playtime would be if
-      you hadn't reset your stats. It takes in your total hours played, recorded hours, and your class playtimes.
-      With this, it turns the class playtimes into a percentage and applies it to your current total playtime.
-      If you've played (relatively) more of a class since you reset your stats, then the results will be
-      inaccurate since it only applies your relative class playtime to your total playtime.
-      The resulting hours are truncated to the hundredth.
-    </p>
-    <p>
-      You're going to have to manually enter your hours since integrating the Steam API would be way more effort for
-      me. Still faster than calculating it yourself, though.
-    </p>
-    <h3>> Contact</h3>
-    <p>
-      If for some reason you wanted to report a bug or whatever, you can make an issue on the repository
-      <a href="https://github.com/silencebow/silencebow.github.io/issues/new">here</href>.
-    </p>
-  </div>
-</body>
+  <body>
+    <div class="left">
+      <h1>TF2 Hour Calculator</h1>
+      <div class="input">
+        <form>
+          Total Playtime:     <input type="number" id="total_input" min="0" max="99999" required><br>
+          Hours on Record: <input type="number" id="recorded_input" min="0" max="99999" required><br>
+          <br>
+          Scout:     <input type="number" id="scout_input" min="0" max="99999" required><br>
+          Soldier:   <input type="number" id="soldier_input" min="0" max="99999" required><br>
+          Pyro:      <input type="number" id="pyro_input" min="0" max="99999" required><br>
+          Demoman:   <input type="number" id="demoman_input" min="0" max="99999" required><br>
+          Heavy:     <input type="number" id="heavy_input" min="0" max="99999" required><br>
+          Engineer:  <input type="number" id="engineer_input" min="0" max="99999" required><br>
+          Medic:     <input type="number" id="medic_input" min="0" max="99999" required><br>
+          Sniper:    <input type="number" id="sniper_input" min="0" max="99999" required><br>
+          Spy:       <input type="number" id="spy_input" min="0" max="99999" required><br>
+          <input type="button" class="button" onclick="input_button()" value="Submit">
+        </form>
+      </div> 
+      <div class="output">
+        <p class="result">Your estimated class hours:</p>
+        <p>Scout     <span class="result" id="scout_result"></span>     <img src="docs/hourcalculator/class_icons/scout.png" class="icons"></p>
+        <p>Soldier   <span class="result" id="soldier_result"></span>   <img src="docs/hourcalculator/class_icons/soldier.png" class="icons"></p>
+        <p>Pyro      <span class="result" id="pyro_result"></span>      <img src="docs/hourcalculator/class_icons/pyro.png" class="icons"></p>
+        <p>Demoman   <span class="result" id="demoman_result"></span>   <img src="docs/hourcalculator/class_icons/demoman.png" class="icons"></p>
+        <p>Heavy     <span class="result" id="heavy_result"></span>     <img src="docs/hourcalculator/class_icons/heavy.png" class="icons"></p>
+        <p>Engineer  <span class="result" id="engineer_result"></span>  <img src="docs/hourcalculator/class_icons/engineer.png" class="icons"></p>
+        <p>Medic     <span class="result" id="medic_result"></span>     <img src="docs/hourcalculator/class_icons/medic.png" class="icons"></p>
+        <p>Sniper    <span class="result" id="sniper_result"></span>    <img src="docs/hourcalculator/class_icons/sniper.png" class="icons"></p>
+        <p>Spy       <span class="result" id="spy_result"></span>       <img src="docs/hourcalculator/class_icons/spy.png" class="icons"></p>
+        <input type="button" class="button" value="Go Back" onClick="show_input()">
+      </div>
+    </div>
+    <div class="right">
+      <h2>> Usage</h2>
+      <p>
+        To find your class playtime and recorded playtime, go to your TF2 achievements in Steam. Then go to the
+        <i>"Records + Stats"</i> tab. Below are the class playtimes, and the recorded playtime is on the right in a
+        light grey box as <i>"___ on record"</i>. The total playtime is the one shown beside the play button for TF2
+        in your library.
+      </p>
+      <h3>> About</h3>
+      <p>
+        This is a very basic calculator that does some simple math to estimate what your class playtime would be if
+        you hadn't reset your stats. It takes in your total hours played, recorded hours, and your class playtimes.
+        With this, it turns the class playtimes into a percentage and applies it to your current total playtime.
+        If you've played (relatively) more of a class since you reset your stats, then the results will be
+        inaccurate since it only applies your relative class playtime to your total playtime.
+        The resulting hours are truncated to the hundredth.
+      </p>
+      <p>
+        You're going to have to manually enter your hours since integrating the Steam API would be way more effort for
+        me. Still faster than calculating it yourself, though.
+      </p>
+      <h3>> Contact</h3>
+      <p>
+        If for some reason you wanted to report a bug or whatever, you can make an issue on the repository
+        <a href="https://github.com/silencebow/silencebow.github.io/issues/new">here</href>.
+      </p>
+    </div>
+  </body>
 </html>
