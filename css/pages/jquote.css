@@ -1,68 +1,47 @@
-/* Header CSS */
-html {
-  background-color: #181a1b;
-  color: #e8e6e3;
-  margin-right: calc(-1 * (100vw - 100%));
-}
-.header {
-  height: 80px;
-  font-family: 'Arial', 'Verdana', 'Sans-Serif';
-}
-.header .header-container {
+@import '../general/theme.css';
+@import '../general/main.css';
+
+/* Navbar */
+.navbar {
   display: inline-block;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
 }
-.header-container .title {
-  display: inline-block;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.header-container h1, .header-container h3 {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-size:32px;
-}
-.header .title {
-  letter-spacing: 2px;
+
+.navbar-title {
   padding: 10px;
-  border: 6px solid #F9837A;
-  color: #F9837A;
+  border: 6px solid var(--link-color);
   border-radius: 5px;
 }
-.header .nav {
-  display: inline-block;
-  margin-left: 110px;
-  vertical-align: text-bottom;
-  font-size: 24px;
-}
-.header .nav a {
-  color: #e8e6e3;
-  text-decoration-line: none;
+
+.navbar-title a {
+  color: var(--link-color);
+  font-size: 32px;
   font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 4px; /* 2px */
 }
-/* End of header CSS */
+/* End of navbar */
 
-
-.main a {
+.jquote-main a {
   margin: 6px;
-  font-weight: bold;
-  color: #F9837A;
+  color: var(--link-color);
   text-decoration-line: none;
 }
-.main a:hover {
+.jquote-main a:hover {
   text-decoration-line: underline;
 }
-.main h1 {
+.jquote-main #title {
   font-size: 52px;
+  font-weight: bold;
   margin: 6px;
 }
-.main h3 {
+.jquote-main #quote {
   font-size: 24px;
+  font-style: italic;
 }
-.main {
+.jquote-main {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -73,9 +52,9 @@ html {
   padding-right: 25%;
 }
 
-#source_link {
+#jquote-source-link {
   text-decoration-line: none;
 }
-#embed {
+#jquote-embed {
   transition: 0.1s ease-in;
 }
