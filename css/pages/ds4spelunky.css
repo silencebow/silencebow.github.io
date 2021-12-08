@@ -1,99 +1,64 @@
-/* Header CSS */
-html {
-  background-color: #181a1b;
-  color: #e8e6e3;
-  margin-right: calc(-1 * (100vw - 100%));
-}
-.header {
-  height: 80px;
-  font-family: 'Arial', 'Verdana', 'Sans-Serif';
-}
-.header .header-container {
+@import '../general/theme.css';
+@import '../general/main.css';
+
+/* Navbar */
+.navbar {
   display: inline-block;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
 }
-.header-container .title {
-  display: inline-block;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.header-container h1, .header-container h3 {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-size:32px;
-}
-.header .title {
-  letter-spacing: 2px;
+
+.navbar-title {
   padding: 10px;
-  border: 6px solid #F9837A;
-  color: #F9837A;
+  border: 6px solid var(--link-color);
   border-radius: 5px;
 }
-.header .nav {
-  display: inline-block;
-  margin-left: 110px;
-  vertical-align: text-bottom;
-  font-size: 24px;
-}
-.header .nav a {
-  color: #e8e6e3;
-  text-decoration-line: none;
+
+.navbar-title a {
+  color: var(--link-color);
+  font-size: 32px;
   font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 4px; /* 2px */
 }
-/* End of header CSS */
+/* End of navbar */
 
-
-#body h1, #body h2, #body h3, #body h4, #body h5, #body h6, #body a, #body p, #body ul {
-  font-family: 'Verdana', 'Arial', 'Helvetica', 'Sans-Serif';
+html {
+  overflow-x: hidden;
+}
+.spelunky-body h1, .spelunky-body h2, .spelunky-body h3, .spelunky-body h4, 
+.spelunky-body h5, .spelunky-body h6, .spelunky-body a, .spelunky-body p, .spelunky-body ul {
   white-space: nowrap;
 }
-h1 {
+.spelunky-body #topdiv {
   text-align: center;
 }
-h2 {
-  margin-top: 35px;
-  margin-bottom: 35px;
-}
-p, ul {
+
+.spelunky-body p, .spelunky-body ul {
   font-size: small;
+  line-height: 20px;
 }
-ul {
+.spelunky-body ul {
   padding: 0px;
 }
-blockquote {
-  background: rgba(80, 80, 80, 0.5); /* #ddd */
+.spelunky-body blockquote {
+  background: #DCDCDC; /* #ddd */
   border-left: 3px solid #5b5b5b;
   margin: 3em auto;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 5px 0.5em;
+  color: #181a1b;
   font-family: 'Verdana', 'Sans-Serif';
   font-size: small;
 }
-blockquote p {
+.spelunky-body blockquote p {
   display:inline;
 }
-html {
-  overflow-x: hidden;
-}
-a {
-  color: #F9837A;
-  text-decoration-line: none;
-}
-a:hover {
-  text-decoration-line: underline;
-}
-.bgdiv {
-  background-color: #111213;
-  color: #fff;
-  padding: 5px 500px;
-  margin: 0px -500px;
-}
-#dl-direct {
-  background-color: rgb(220, 220, 220); /*#0070e0*/
+
+#spelunky-alltex-dl {
+  background-color: #DCDCDC; /*#0070e0*/
   text-decoration: none;
   color: rgb(0, 0, 0);
   padding: 10px 15px;
@@ -102,14 +67,14 @@ a:hover {
   font-weight: bold;
   border-radius: 4px;
 }
-#dl-direct:after {
+#spelunky-alltex-dl::after {
   content: '';
   width: 0px;
-  height: 1px;
+  height: 2px;
   display: block;
   background: black;
   transition: 0.2s;
 }
-#dl-direct:hover:after {
+#spelunky-alltex-dl:hover::after {
   width: 100%;
 }
