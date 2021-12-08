@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Montserrat';
+  src:url("../assets/fonts/Montserrat/Montserrat-Light.ttf");
+  font-weight: light;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src:url("../assets/fonts/Montserrat/Montserrat-Regular.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../assets/fonts/Montserrat/Montserrat-Italic.ttf");
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src:url("../assets/fonts/Montserrat/Montserrat-Bold.ttf");
+  font-weight: bold;
+}
+
+html {
+  font-family: 'Montserrat', 'Helvetica', 'Sans-Serif';
+  background: var(--bg-color);
+  color: var(--font-color);
+  /* Magic to avoid element repositioning when scrollbar is visible */
+  /* margin-right: calc(-1 * (100vw - 100%)); */
+}
+
+a {
+  color: var(--link-color);
+  text-decoration-line: none;
+}
+a:hover {
+  text-decoration-line: underline;
+}
