@@ -1,5 +1,5 @@
-@import 'theme.css';
-@import 'main.css';
+@import '../general/theme.css';
+@import '../general/main.css';
 
 /* Navbar */
 .navbar {
