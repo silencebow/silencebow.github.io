@@ -1,0 +1,25 @@
+@import '../general/theme.css';
+@import '../general/main.css';
+
+/* Navbar */
+.navbar {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar-title {
+  padding: 10px;
+  border: 6px solid var(--link-color);
+  border-radius: 5px;
+}
+
+.navbar-title a {
+  color: var(--link-color);
+  font-size: 32px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 4px; /* 2px */
+}
+/* End of navbar */
