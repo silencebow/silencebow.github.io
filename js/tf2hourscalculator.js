@@ -34,7 +34,7 @@ function input_button() {
 function calc(merc) {
   var merc_percentage = merc / list[1];
   var estimated_total = list[0] * merc_percentage;
-  var estimated_total = Math.floor(estimated_total * 100) / 100; // Truncating without rounding attempt
+  var estimated_total = estimated_total.toFixed(0);
   if (estimated_total >= 0 && estimated_total <= 99999) {
     return estimated_total;
   } else {
@@ -44,15 +44,15 @@ function calc(merc) {
 
 // Hide the input field and show the output field
 function show_output() {
-  var x = document.getElementsByClassName("left")[0];
-  x.getElementsByClassName("input")[0].style.display = "none";
-  var y = document.getElementsByClassName("left")[0];
-  y.getElementsByClassName("output")[0].style.display = "block";
+  var x = document.getElementsByClassName("hrscalc-left")[0];
+  x.getElementsByClassName("hrscalc-input")[0].style.display = "none";
+  var y = document.getElementsByClassName("hrscalc-left")[0];
+  y.getElementsByClassName("hrscalc-output")[0].style.display = "block";
 }
 // Hide the output field and show the input field
 function show_input() {
-  var x = document.getElementsByClassName("left")[0];
-  x.getElementsByClassName("output")[0].style.display = "none";
-  var y = document.getElementsByClassName("left")[0];
-  y.getElementsByClassName("input")[0].style.display = "block";
+  var x = document.getElementsByClassName("hrscalc-left")[0];
+  x.getElementsByClassName("hrscalc-output")[0].style.display = "none";
+  var y = document.getElementsByClassName("hrscalc-left")[0];
+  y.getElementsByClassName("hrscalc-input")[0].style.display = "block";
 }
