@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="An easy way to calculate your hours played per class after having reset your stats.">
+    <meta name="keywords" content="steam, tf2, hours, stats, reset">
+    <meta name="author" content="silencebow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="TF2 Hours Calculator">
+    <meta property="og:description" content="An easy way to calculate your hours played per class after having reset your stats.">
+    <meta property="og:url" content="https://silencebow.github.io/tf2hourscalculator">
+    <meta property="og:image" content="https://i.imgur.com/ex00Yqf.png">
+    <meta property="og:image:width" content="184">
+    <meta property="og:image:height" content="184">
+    <link href="docs/favicon.ico" rel="icon" type="image/x-icon">
+    
+    <link rel="stylesheet" type="text/css" href="css/pages/tf2hourscalculator.css">
+    <script src="js/tf2hourscalculator.js"></script>
+    <title>TF2 Hours Calculator</title>
+  </head>
+  <div class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-title">
+        <a href="/">SILENCEBOW</a>
+      </div>
+    </div>
+  </div>
+  <body>
+    <div class="hrscalc">
+      <div class="hrscalc-left">
+        <h1>TF2 Hours Calculator</h1>
+        <div class="hrscalc-input">
+          <form>
+            Total Playtime: <input type="number" id="total_input" min="0" max="99999" required><br>
+            Hours on Record: <input type="number" id="recorded_input" min="0" max="99999" required><br>
+            <br>
+            Scout: <input type="number" id="scout_input" min="0" max="99999" required><br>
+            Soldier: <input type="number" id="soldier_input" min="0" max="99999" required><br>
+            Pyro: <input type="number" id="pyro_input" min="0" max="99999" required><br>
+            Demoman: <input type="number" id="demoman_input" min="0" max="99999" required><br>
+            Heavy: <input type="number" id="heavy_input" min="0" max="99999" required><br>
+            Engineer: <input type="number" id="engineer_input" min="0" max="99999" required><br>
+            Medic: <input type="number" id="medic_input" min="0" max="99999" required><br>
+            Sniper: <input type="number" id="sniper_input" min="0" max="99999" required><br>
+            Spy: <input type="number" id="spy_input" min="0" max="99999" required><br>
+            <input type="button" class="hrscalc-button" onclick="input_button()" value="Submit">
+          </form>
+        </div>
+        <div class="hrscalc-output">
+          <p class="hrscalc-result">Your estimated class hours:</p>
+          <p><span class="result" id="scout_result"></span> hrs on Scout <img
+              src="assets/pages/tf2hourscalculator/class_icons/scout.png" class="hrscalc-icons"></p>
+          <p><span class="result" id="soldier_result"></span> hrs on Soldier <img
+              src="assets/pages/tf2hourscalculator/class_icons/soldier.png" class="hrscalc-icons"></p>
+          <p><span class="result" id="pyro_result"></span> hrs on Pyro <img
+              src="assets/pages/tf2hourscalculator/class_icons/pyro.png" class="hrscalc-icons"></p>
+          <p><span class="result" id="demoman_result"></span> hrs on Demoman <img
+              src="assets/pages/tf2hourscalculator/class_icons/demoman.png" class="hrscalc-icons"></p>
+          <p><span class="result" id="heavy_result"></span> hrs on Heavy <img
+              src="assets/pages/tf2hourscalculator/class_icons/heavy.png" class="hrscalc-icons"></p>
+          <p><span class="result" id="engineer_result"></span> hrs on Engineer <img
+              src="assets/pages/tf2hourscalculator/class_icons/engineer.png" class="hrscalc-icons"></p>
+          <p><span class="result" id="medic_result"></span> hrs on Medic <img
+              src="assets/pages/tf2hourscalculator/class_icons/medic.png" class="hrscalc-icons"></p>
+          <p><span class="result" id="sniper_result"></span> hrs on Sniper <img
+              src="assets/pages/tf2hourscalculator/class_icons/sniper.png" class="hrscalc-icons"></p>
+          <p><span class="result" id="spy_result"></span> hrs on Spy <img
+              src="assets/pages/tf2hourscalculator/class_icons/spy.png" class="hrscalc-icons"></p>
+          <input type="button" class="hrscalc-button" value="Go Back" onClick="show_input()">
+        </div>
+      </div>
+      <div class="hrscalc-right">
+        <h2>> Usage</h2>
+        <p>
+          To find your class playtime and recorded playtime, go to your TF2 achievements in Steam. Then go to the
+          <i>"Records + Stats"</i> tab. Below are the class playtimes, and the recorded playtime is on the right in a
+          light grey box as <i>"___ on record"</i>. The total playtime is the one shown beside the play button for TF2
+          in your library.
+        </p>
+        <h3>> About</h3>
+        <p>
+          This is a very basic calculator that does some simple math to estimate what your class playtime would be if
+          you hadn't reset your stats. It takes in your total hours played, recorded hours, and your class playtimes.
+          With this, it turns the class playtimes into a percentage and applies it to your current total playtime.
+          If you've played (relatively) more of a class since you reset your stats, then the results will be
+          inaccurate since it only applies your relative class playtime to your total playtime.
+          The resulting hours are truncated to an integer.
+        </p>
+        <p>
+          You're going to have to manually enter your hours since integrating the Steam API would be way more effort for
+          me. Not very useful, but it was for practice.
+        </p>
+        <h3>> Contact</h3>
+        <p>
+          If for some reason you wanted to report a bug or whatever, you can make an issue on the repository
+          <a href="https://github.com/silencebow/silencebow.github.io/issues/new">here</href>.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
