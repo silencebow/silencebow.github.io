@@ -17,9 +17,9 @@
     <link href="assets/favicon.ico" rel="icon" type="image/x-icon">
 
     <link rel="stylesheet" type="text/css" href="css/pages/tf2loadoutgenerator.css">
-    <script src="js/tf2loadoutgenerator.js"></script>
     <title>TF2 Loadout Generator • silencebow</title>
   </head>
+
   <div class="navbar">
     <div class="navbar-container">
       <div class="navbar-title">
@@ -28,5 +28,41 @@
     </div>
   </div>
   <body>
-    <h1>hello world</h1>
+    <div class="loadout-selection">
+      <input type="button" class="class-selection-button" onclick="class_selection('any')" value="Any">
+      <input type="button" class="class-selection-button" onclick="class_selection('scout')" value="Scout">
+      <input type="button" class="class-selection-button" onclick="class_selection('soldier')" value="Soldier">
+      <input type="button" class="class-selection-button" onclick="class_selection('pyro')" value="Pyro">
+      <input type="button" class="class-selection-button" onclick="class_selection('demoman')" value="Demoman">
+      <input type="button" class="class-selection-button" onclick="class_selection('heavy')" value="Heavy">
+      <input type="button" class="class-selection-button" onclick="class_selection('engineer')" value="Engineer">
+      <input type="button" class="class-selection-button" onclick="class_selection('medic')" value="Medic">
+      <input type="button" class="class-selection-button" onclick="class_selection('sniper')" value="Sniper">
+      <input type="button" class="class-selection-button" onclick="class_selection('spy')" value="Spy">
+    </div>
+    <div class="loadout-result">
+      <div id="primary-slot">
+        <img id="primary-image" src="">
+        <p id="primary-name"></p>
+      </div>
+      <div id="secondary-slot">
+        <img id="secondary-image" src="">
+        <p id="secondary-name"></p>
+      </div>
+      <div id="melee-slot">
+        <img id="melee-image" src="">
+        <p id="melee-name"></p>
+      </div>
+      <div id="PDA-slot">
+        <img id="PDA-image" src="">
+        <p id="PDA-name"></p>
+      </div>
+    </div>
+    <div class="class-image-container">
+      <img id="class-image" src="">
+    </div>
   </body>
+
+  <script src="js/tf2loadoutgenerator_array.js"></script>
+  <script src="js/tf2loadoutgenerator.js"></script>
+</html>
