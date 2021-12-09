@@ -32,8 +32,6 @@ function class_selection(class_) {
                                                       + class_ + '/' + class_ + '.png';
       // Display the weapon slot
       document.getElementById(slot + '-slot').style.display = 'inherit';
-      console.log(class_)
-      console.log(slot)
     }
   }
 }
