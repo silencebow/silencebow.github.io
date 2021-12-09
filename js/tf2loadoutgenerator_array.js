@@ -1,6 +1,6 @@
 var scout = {name: 'Scout',
              primary: ['Scattergun', 'Force-A-Nature', 'Shortstop', 'Soda Popper', 'Baby Face\'s Blaster', 'Back Scatter'],
-             secondary: ['Pistol', 'Winger', 'Pretty Boy\'s Pocket Pistol', 'Flying Guillotine', 'Bonk! Atomic Punch', 'Crit-A-Cola', 'Mad Milk'],
+             secondary: ['Pistol', 'Winger', 'Pretty Boy\'s Pocket Pistol', 'Flying Guillotine', 'Bonk! Atomic Punch', 'Crit-a-Cola', 'Mad Milk'],
              melee: ['Bat', 'Sandman', 'Candy Cane', 'Boston Basher', 'Sun-on-a-Stick', 'Fan O\'War', 'Atomizer', 'Wrap Assassin'],
              PDA: null
             }
