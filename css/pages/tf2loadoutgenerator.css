@@ -1,0 +1,99 @@
+@import '../general/theme.css';
+@import '../general/main.css';
+
+@font-face {
+  font-family: 'TF2 Build';
+  src:url("../../assets/fonts/TF2/tf2build.ttf");
+  font-weight: light;
+}
+
+/* Navbar */
+.navbar {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar-title {
+  padding: 10px;
+  border: 6px solid var(--link-color);
+  border-radius: 5px;
+}
+
+.navbar-title a {
+  color: var(--link-color);
+  font-size: 32px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 4px; /* 2px */
+}
+/* End of navbar */
+
+.class-selection-button {
+  font-family: 'TF2 Build';
+  font-size: 16px;
+  color: var(--font-color);
+  width: 120px;
+  padding: 15px;
+  background: none;
+  border: 2px solid #6B6358;
+  border-radius: 10px;
+}
+
+.class-image-container {
+    position: absolute;
+    top: 60%;
+    right: 40%;
+    transform: translate(50%, -50%);
+    text-align: center;
+}
+
+#class-image {
+  z-index: -10;
+  width: 600px;
+}
+
+.loadout-selection {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  /* padding-left: 25%; */
+  /* padding-right: 25%; */
+}
+
+.loadout-result {
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10;
+}
+
+#primary-slot, #secondary-slot, #melee-slot, #PDA-slot {
+  display: none;
+  /* background: #292526; */
+  background: #181a1b;
+  border: 2px solid #6B6358;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#primary-slot img, #secondary-slot img, #melee-slot img, #PDA-slot img {
+  object-fit: cover;
+  padding-top: 10px;
+  height: 120px;
+  width: 200px;
+}
+#primary-name, #secondary-name, #melee-name, #PDA-name {
+  font-family: 'TF2 Build';
+  font-size: 22px;
+  color: #FFD800;
+  padding: 0px 20px 10px 20px;
+  margin: -15px 0px 0px 0px;
+  width: 250px;
+}
