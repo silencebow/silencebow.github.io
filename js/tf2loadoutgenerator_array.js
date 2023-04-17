@@ -23,7 +23,7 @@ var demoman = {name: 'Demoman',
                PDA: null
               }
 var heavy = {name: 'Heavy',
-             primary: ['Minigun', 'Natascha', 'Brass Beast', 'Tomislav', 'Huo-long Heater'],
+             primary: ['Minigun', 'Natascha', 'Brass Beast', 'Tomislav', 'Huo-Long Heater'],
              secondary: ['Shotgun', 'Family Business', 'Sandvich', 'Dalokohs Bar', 'Buffalo Steak Sandvich', 'Panic Attack', 'Second Banana'],
              melee: ['Fists', 'Killing Gloves of Boxing', 'Gloves of Running Urgently', 'Warrior\'s Spirit', 'Fists of Steel', 'Eviction Notice', 'Holiday Punch'],
              PDA: null
