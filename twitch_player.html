@@ -1,16 +1,8 @@
 <html>
-  <script src= "https://player.twitch.tv/js/embed/v1.js"></script>
-  <div id="player"></div>
-  <script type="text/javascript">
-    var options = {
-      width: 800,
-      height: 600,
-      channel: "Xaryu",
-      autoplay: false,
-      // only needed if your site is also embedded on embed.example.com and othersite.example.com
-      parent: ["silencebow.netlify.app"]
-    };
-    var player = new Twitch.Player("player", options);
-    player.setVolume(0.5);
-  </script>
+  <iframe
+      src="https://player.twitch.tv/?channel=xaryu&parent=silencebow.netlify.app"
+      height="<height>"
+      width="<width>"
+      allowfullscreen>
+  </iframe>
 </html>
