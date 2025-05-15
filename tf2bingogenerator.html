@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/pages/tf2bingogenerator.css">
+  </head>
+  <body>
+    <div class="main">
+      <div class="top">
+        <h1>TF2 BINGO</h1>
+      </div>
+      <div class="container">
+        <div class="boxes">
+          <div class="box">
+            <p class="space" id="0"></p>
+            <p class="tooltip" id="tooltip-0"></p>
+          </div>
+          <div class="box">
+            <p class="space" id="1"></p>
+            <p class="tooltip" id="tooltip-1"></p>
+          </div>
+          <div class="box">
+            <p class="space" id="2"></p>
+            <p class="tooltip" id="tooltip-2"></p>
+          </div>
+          <div class="box">
+            <p class="space" id="3"></p>
+            <p class="tooltip" id="tooltip-3"></p>
+          </div>
+          <div class="box">
+            <p class="space" id="4"></p>
+            <p class="tooltip" id="tooltip-4"></p>
+          </div>
+          <div class="box">
+            <p class="space" id="5"></p>
+            <p class="tooltip" id="tooltip-5"></p>
+          </div>
+          <div class="box">
+            <p class="space" id="6"></p>
+            <p class="tooltip" id="tooltip-6"></p>
+          </div>
+          <div class="box">
+            <p class="space" id="7"></p>
+            <p class="tooltip" id="tooltip-7"></p>
+          </div>
+          <div class="box">
+            <p class="space" id="8"></p>
+            <p class="tooltip" id="tooltip-8"></p>
+          </div>
+          <div class="box">
+            <p class="space" id="9"></p>
+            <p class="tooltip" id="tooltip-9"></p>
+          </div>
+          <div class="box">
+            <p class="space" id="10"></p>
+            <p class="tooltip" id="tooltip-10"></p>
+          </div>
+          <div class="box">
+            <p class="space" id="11"></p>
+            <p class="tooltip" id="tooltip-11"></p>
+          </div>
+          <div class="box">
+            <p class="space checked" id="12">Free Space</p>
+            <p class="tooltip" id="tooltip-12"></p>
+          </div>
+          <div class="box">
+            <p class="space" id="13"></p>
+            <p class="tooltip" id="tooltip-13"></p>
+          </div>
+          <div class="box">
+            <p class="space" id="14"></p>
+            <p class="tooltip" id="tooltip-14"></p>
+          </div>
+          <div class="box">
+            <p class="space" id="15"></p>
+            <p class="tooltip" id="tooltip-15"></p>
+          </div>
+          <div class="box">
+            <p class="space" id="16"></p>
+            <p class="tooltip" id="tooltip-16"></p>
+          </div>
+          <div class="box">
+            <p class="space" id="17"></p>
+            <p class="tooltip" id="tooltip-17"></p>
+          </div>
+          <div class="box">
+            <p class="space" id="18"></p>
+            <p class="tooltip" id="tooltip-18"></p>
+          </div>
+          <div class="box">
+            <p class="space" id="19"></p>
+            <p class="tooltip" id="tooltip-19"></p>
+          </div>
+          <div class="box">
+            <p class="space" id="20"></p>
+            <p class="tooltip" id="tooltip-20"></p>
+          </div>
+          <div class="box">
+            <p class="space" id="21"></p>
+            <p class="tooltip" id="tooltip-21"></p>
+          </div>
+          <div class="box">
+            <p class="space" id="22"></p>
+            <p class="tooltip" id="tooltip-22"></p>
+          </div>
+          <div class="box">
+            <p class="space" id="23"></p>
+            <p class="tooltip" id="tooltip-23"></p>
+          </div>
+          <div class="box">
+            <p class="space" id="24"></p>
+            <p class="tooltip" id="tooltip-24"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="extras">
+      <form>
+        <label for="seed">Seed:</label>
+        <input type="number" id="seed" name="seed">
+        <input type="button" value="Submit" onclick="inputSeed(seed.value)">
+      </form>
+      <input type="checkbox" id="freeSpaceButton" onchange="toggleFreeSpace()" value="Free Space" checked>
+      <label for="freeSpaceButton">Free Space</label>
+    </div>
+    <a href="https://github.com/silencebow/silencebow.github.io/issues/new">Contact</a>
+  </body>
+  <script src="js/tf2bingogenerator.js"></script>
+</html>
