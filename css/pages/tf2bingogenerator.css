@@ -1,0 +1,131 @@
+/* Set global variables */
+:root {
+  --bg-color: #2B2724;
+  --bg-tooltip: #322E28;
+  --unchecked: #221E1B;
+  --checked: #977E21;
+  --checkedBorder: #FFD700;
+  --font-color-primary: white;
+  --font-color-link: #476291;
+  --font-primary: 'TF2 Build';
+  --font-secondary: 'TF2 Secondary';
+}
+/*@media (prefers-color-scheme: light) {
+ :root {
+  }
+}*/
+
+/* Import the TF2 fonts */
+@font-face {
+  font-family: 'TF2 Build';
+  src:url("../../assets/fonts/TF2/tf2build.ttf");
+  font-weight: light;
+}
+@font-face {
+  font-family: 'TF2 Build';
+  src:url("../../assets/fonts/TF2/tf2secondary.ttf");
+}
+
+/* Set default bg and font colours */
+html {
+  background: var(--bg-color);
+  color: var(--font-color-primary);
+  font-family: var(--font-primary);
+  letter-spacing: 0.025em;
+}
+
+a {
+  position: absolute;
+  bottom: 0;
+  color: var(--font-color-link);
+  font-family: var(--font-secondary);
+}
+
+/* Set positioning of the seed and free space toggle */
+.extras {
+  position: relative;
+  font-family: var(--font-secondary);
+}
+
+/* Set the position of the bingo board and disable text selection */
+.main {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  user-select: none;
+}
+
+/* Set sizing and such of the title text */
+.top {
+  position: relative;
+  left: 25%;
+  width: 50%;
+  font-size: 2rem;
+  letter-spacing: 0.25rem;
+  text-align: center;
+}
+h1 {
+  margin: 0;
+}
+
+/* Set the board to flex and lock it's width to keep things 5x5 */
+.container {
+  position: relative;
+  display: flex;
+  width: 50rem;
+  min-width: 50rem;
+}
+
+/* Set the layout of the flexbox */
+.boxes {
+  display: flex;
+  flex-flow: row wrap;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 50px;
+  justify-content: center;
+}
+
+/* Set the layout of the actual bingo spaces */
+.space {
+  position: relative;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  word-break: break-word;
+  font-size: 0.95rem;
+  width: 8rem;
+  height: 8rem;
+  margin: 0.2rem;
+  padding: 0.5rem;
+  background-color: var(--unchecked);
+  border: 2px solid transparent;
+  border-radius: 16px;
+}
+
+/* Pre-style the hidden tooltips */
+.tooltip {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 99%;
+  transform: translateX(-50%);
+  width: 50rem;
+  padding: 0.5rem;
+  pointer-events: none;
+  border-radius: 8px;
+  font-family: var(--font-secondary);
+  text-align: center;
+}
+/* Show the tooltip on hover */
+.box:hover .tooltip {
+  display: block;
+}
+
+/* Highlight completed boxes with different colours */
+.checked {
+  background-color: var(--checked);
+  border: 2px solid var(--checkedBorder);
+}
