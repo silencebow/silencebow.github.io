@@ -129,11 +129,11 @@ function toggleColor(id) {
   let element = document.getElementById(id);
   let checked = element.classList.contains("checked");
   if (!checked) {
-    element.classList.add("checked");
+    element.classList.toggle("checked");
   } else if (checked) {
       // Need to disable toggling for the free space while free space is enabled
       if (!(id == 12 && freeSpaceEnabled())) {
-        element.classList.remove("checked");
+        element.classList.toggle("checked");
       }
   }
 }
