@@ -1,3 +1,7 @@
+// Tile sources:
+// https://charlesstover.github.io/tf2-bingo/
+// https://www.reddit.com/r/tf2/comments/3ym6s3/i_made_a_yet_another_bingo_card_generator_but/
+// https://codepen.io/unitgon/pen/xZRVdV
 const bingo_squares_array = [
                             {title:"2+ Mini-Sentries", description:"2 or more mini-sentries on the same team"},
                             {title:"3+ Players AFK", description:"3 or more players afk on the same team"},
@@ -63,10 +67,6 @@ const bingo_squares_array = [
                             {title:"Machina Collateral", description:"You or somebody else gets the machina penetration sound to play"},
                             {title:"Huntsman", description:"Somebody else is using the huntsman"}
                             ]
-// Sources
-// https://charlesstover.github.io/tf2-bingo/
-// https://www.reddit.com/r/tf2/comments/3ym6s3/i_made_a_yet_another_bingo_card_generator_but/
-// https://codepen.io/unitgon/pen/xZRVdV
 
 
 // Randomized int function with min and max values
