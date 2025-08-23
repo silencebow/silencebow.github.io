@@ -10,7 +10,7 @@ const bingo_squares_array = [
                             {title:"3+ Snipers or Spies",
                               description:"3 or more players on sniper or spy on the same team"},
                             {title:"Hackusations",
-                              description:"Somebody calls somebody else a cheater without merit"},
+                              description:"Somebody accuses another player of cheating"},
                             {title:"Australium",
                               description:"Somebody has an australium or golden weapon"},
                             {title:"Unusual",
