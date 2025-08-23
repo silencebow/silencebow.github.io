@@ -30,7 +30,7 @@ function populate(array) {
     if (i !== freeSpace) {
       document.getElementById(i).innerHTML = array[i].title;
       document.getElementById(`tooltip-${i}`).innerHTML = array[i].description;
-    // Store it's data instead
+    // Store its data instead
     } else if (i == freeSpace) {
       freeSpaceValue = array[i].title;
       freeSpaceDescriptionValue = array[i].description;
